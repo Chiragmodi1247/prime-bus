@@ -1,6 +1,6 @@
 <template>
 	<div class="content">
-		<img src="../../src/assets/bus.png" alt="bus" class="content__image">
+		<img src="../../src/assets/bus.jpg" alt="bus" class="content__image">
 		<form class="content__form" v-on:submit.prevent="submitForm">
 			<div class="form_title">
 				<h2>Add Route</h2>
@@ -94,6 +94,7 @@ h2 {
 .content__image {
   position: absolute;
   height: calc(100vh - 80px);
+  width: 100vw;
 }
 
 .form_title {
@@ -105,8 +106,8 @@ h2 {
 .content__form {
   position: absolute;
 	background: white;
-	right: 5vw;
-	width: 25vw;
+  left: 35vw;
+	width: 30vw;
 	margin-left: auto;
 	margin-top: 10vh;
 	display: flex;
